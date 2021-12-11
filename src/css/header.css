@@ -1,0 +1,137 @@
+:root {
+  --clr-dark-primary: #180450;
+  --clr-dark-secondary: #bdf609;
+  --clr-dark-tretiary: #9c00a3;
+  --clr-dark-font: rgb(185, 185, 185);
+  --clr-light-primary: rgb(184, 183, 183);
+  --clr-light-font: rgb(0, 0, 0);
+  --box-shadow-light: 0px 5px 20px 1px rgb(0, 0, 0);
+}
+
+.header-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--clr-dark-primary);
+  box-shadow: var(--box-shadow);
+  width: 70vw;
+  max-height: 76px;
+  max-width: 1008px;
+  border-radius: 0 0 5px 5px;
+  color: var(--clr-dark-font);
+  box-shadow: var(--box-shadow-light);
+}
+/* logo */
+.logo {
+  margin-left: 10px;
+  min-width: 70px;
+  max-width: 72px;
+  height: auto;
+}
+/* navigation */
+.header-navigation-container {
+  display: flex;
+  align-items: center;
+  background: none;
+}
+.header-navigation-wrapper {
+  margin-right: 30px;
+}
+
+.header-navigation {
+  background: none;
+  transition: ease-in 0.2s;
+}
+.header-navigation:hover {
+  transform: translateY(-3px);
+}
+.header-navigation-wrapper:hover {
+  cursor: pointer;
+  border-bottom: solid 3px grey;
+}
+
+/* animation */
+
+.logo {
+  position: relative;
+  top: 100px;
+  animation: slide-top 0.5s ease forwards;
+}
+
+.header-navigation-container {
+  animation: appear 0.7s ease forwards;
+}
+
+@keyframes slide-top {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-100px);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* responsive */
+@media (max-width: 530px) {
+  .header-navigation {
+    font-size: 15px;
+  }
+  .header-navigation-wrapper {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .header-navigation {
+    font-size: 15px;
+  }
+  .header-navigation-wrapper {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .header-wrapper {
+    width: 80vw;
+  }
+  .header-navigation {
+    font-size: 15px;
+  }
+  .header-navigation-wrapper {
+    margin-right: 10px;
+  }
+  .logo {
+    min-width: 20px;
+    width: 60px;
+  }
+}
+
+@media (max-width: 335px) {
+  .header-navigation {
+    font-size: 11px;
+  }
+  .header-navigation-wrapper {
+    margin-right: 7px;
+  }
+  .logo {
+    min-width: 20px;
+    width: 50px;
+  }
+}
