@@ -42,11 +42,13 @@
 }
 
 .project-images {
-  padding: 1rem 0;
+  margin: 1rem 0;
   width: 20vw;
   max-width: 300px;
   min-width: 270px;
   transition: ease-in 0.2s;
+  box-shadow: var(--box-shadow-light);
+  border-radius: 5px;
 }
 @media (max-width: 1243px) {
   .project-images {
@@ -80,7 +82,7 @@
 
 .project-link:hover {
   cursor: pointer;
-  color: green;
+  color: var(--clr-hover);
 }
 
 /* animation */

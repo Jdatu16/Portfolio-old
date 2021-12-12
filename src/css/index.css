@@ -11,17 +11,20 @@
   --clr-body: #000;
   --clr-dark-primary: #180450;
   --clr-dark-secondary: #bdf609;
-  --clr-dark-tretiary: #9c00a3;
-  --clr-dark-font: rgb(185, 185, 185);
-  --clr-light-primary: rgb(184, 183, 183);
-  --box-shadow-light: 2px 2px 20px rgb(192, 192, 192);
+  --clr-dark-tretiary: #d3282e;
+  --clr-dark-font: #b9b9b9;
+  --box-shadow-light: 0px 5px 20px 1px rgba(0, 0, 0, 0.678);
+  --clr-hover: rgb(155, 17, 17);
+  --clr-hover-after: rgb(107, 187, 15);
+  --body-dark-ulr: url(./../images/body-background.png);
+  --body-light-url: url(./../images/body-background-light.jpg);
 }
 
 body {
   box-sizing: border-box;
   font-family: Marriweather, sans-serif;
   text-transform: capitalize;
-  background-image: url("./../images/body-background.png");
+  background-image: var(--body-dark-ulr);
   background-repeat: repeat-y;
   background-size: 100vw auto;
   background-color: var(--clr-body);

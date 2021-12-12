@@ -35,7 +35,7 @@
 
 .social-icons {
   font-size: 25px;
-  color: white;
+  color: var(--clr-dark-font);
   margin: 10px;
   transition: ease-in 0.2s;
 }
@@ -45,7 +45,6 @@
 .social-icons:hover {
   cursor: pointer;
   transform: translateY(5px);
-  color: var(--clr-dark-secondary);
 }
 
 /* send email style */
@@ -71,6 +70,7 @@
 }
 
 .emailer-style > input {
+  border: none;
   border-radius: 5px;
   padding: 2px;
 }
@@ -97,10 +97,12 @@ textarea:focus {
   color: var(--clr-dark-primary);
   font-weight: 600;
   letter-spacing: 2px;
+  border: none;
 }
 .emailer-style > button:hover {
+  color: var(--clr-dark-font);
   cursor: pointer;
-  background-color: rgb(18, 173, 18);
+  background-color: var(--clr-hover);
 }
 /* send another email style */
 .emailer-container-sent {
@@ -112,6 +114,7 @@ textarea:focus {
 }
 .sent-email-text {
   max-width: 28vw;
+  color: green !important;
 }
 .another-email {
   border-radius: 5px;
@@ -128,7 +131,7 @@ textarea:focus {
 }
 .another-email:hover {
   cursor: pointer;
-  background-color: rgb(18, 173, 18);
+  background-color: var(--clr-hover);
 }
 
 .error-text {

@@ -1,10 +1,15 @@
+import { useContext } from "react";
+import { StateContext } from "../../App";
 import profilePic from "../../images/profile-white.png";
+import profilePic2 from "../../images/profile-dark.png";
 
 export const About = () => {
+  const { changeTheme } = useContext(StateContext);
+
   return (
     <div className="about-container">
       <div className="about-picture-container">
-        <img src={profilePic} alt="profile" />
+        <img src={changeTheme ? profilePic2 : profilePic} alt="profile" />
       </div>
       <div className="about-bio-container">
         <div className="bio">
