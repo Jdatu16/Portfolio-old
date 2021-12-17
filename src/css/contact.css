@@ -151,6 +151,9 @@ textarea:focus {
 .contact-icons-container {
   animation: appear 0.5s ease-in forwards;
 }
+.appear {
+  animation: appear 0.5s ease-in forwards;
+}
 
 @keyframes appear {
   0% {
@@ -176,7 +179,7 @@ textarea:focus {
     width: 170px;
   }
   .contact-container {
-    height: 530px;
+    height: 550px;
   }
   .emailer-container > p {
     width: 250px;
@@ -213,12 +216,12 @@ textarea:focus {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 325px) {
   .emailer-style {
-    width: 180px;
+    width: 200px;
   }
   .emailer-container > p {
-    width: 180px;
+    width: 200px;
   }
   .sent-email-text {
     width: 205px;

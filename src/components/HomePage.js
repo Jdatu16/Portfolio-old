@@ -1,9 +1,11 @@
-import { About } from "./atoms";
+import { About, Contact, Projects } from "./atoms";
 
-export const HomePage = () => {
+export const HomePage = ({ setAboutOpen }) => {
   return (
     <div className="content-container">
       <About />
+      <Projects />
+      <Contact />
     </div>
   );
 };

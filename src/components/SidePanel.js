@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { PlaySound } from "./atoms/PlaySound";
 import "../css/sidePanel.css";
-import { ThemeChanger } from "./atoms";
+import { ChangeLanguage, ThemeChanger } from "./atoms";
 
 export const SidePanel = () => {
   const [sidePanelToggled, setSidePanelToggled] = useState(false);
@@ -27,6 +27,7 @@ export const SidePanel = () => {
           }
         >
           <PlaySound />
+          <ChangeLanguage />
           <ThemeChanger />
         </div>
         <div className="sidepanel-bottom-side">

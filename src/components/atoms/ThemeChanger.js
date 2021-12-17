@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { StateContext } from "../../App";
-import { cssVarsAfter, cssVarsInit } from "../../constants/";
+import { changeColors } from "../../tools";
 
 export const ThemeChanger = () => {
   const { changeTheme, setChangeTheme } = useContext(StateContext);
@@ -8,16 +8,7 @@ export const ThemeChanger = () => {
   const toggleTheme = () => {
     setChangeTheme((prev) => !prev);
 
-    if (changeTheme) {
-      cssVarsInit.map(({ name, value }) => {
-        console.log(value);
-        return document.documentElement.style.setProperty(name, value);
-      });
-    } else if (!changeTheme) {
-      cssVarsAfter.map(({ name, value }) => {
-        return document.documentElement.style.setProperty(name, value);
-      });
-    }
+    changeColors(changeTheme);
   };
 
   return (
