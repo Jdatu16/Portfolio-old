@@ -14,16 +14,16 @@ export const About = () => {
       <div className="about-bio-container">
         <div className="bio">
           <h3 className="introduction">
-            {changeLanguage ? "my name is Juba," : "მე მქვია ჯუბა,"}
+            {changeLanguage ? "My name is Juba," : "მე მქვია ჯუბა,"}
             <br />
-            {changeLanguage ? "i'm a react developer" : "ვარ React დეველოპერი"}
+            {changeLanguage ? "I'm a React Developer" : "ვარ React დეველოპერი"}
           </h3>
         </div>
 
         <div className="bio">
           <p>
             {changeLanguage
-              ? "Here you can get to know me a little. On this page, you will find some of my projects, as well as the ways to contact me. also, feel free to change color and language by clicking the arrow button on the left top side of the screen."
+              ? "Here You can get to know me a little. On this page, You will find some of my projects, as well as the ways to contact me. Also, feel free to change color and language by clicking the arrow button on the left top side of the screen."
               : "აქ შეძლებ ჩემს შესახებ ზოგადი წარმოდგენის შექმნას. გექნება საშუალება ნახო ჩემი პროექტები და დამიკავშირდე, თუ გექნება სურვილი. "}
           </p>
         </div>

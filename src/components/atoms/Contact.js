@@ -53,7 +53,7 @@ export const Contact = () => {
         <div className="contact-icons-container">
           <p>
             {changeLanguage
-              ? "you can find me here:"
+              ? "You can find me here:"
               : "აქ შეძლებ ჩემს პოვნას:"}
           </p>
           <div className="social-icons-wrapper">
@@ -87,12 +87,12 @@ export const Contact = () => {
           <div className="emailer-container-sent">
             <p className="sent-email-text">
               {changeLanguage
-                ? "Your Email Was Successfully Sent! I will soon check it. If you want to send another email, please click the button below"
+                ? "Your Email was successfully sent! I will soon check it. If You want to send another email, please click the button below"
                 : "იმეილი წარმატებით გაიგზავნა! ვეცდები მალე ვნახო. კიდევ ერთი შეტყობინების გასაგზავნად გთხოვ დააჭირო ქვემოთ არსებულ ღილაკს"}
             </p>
             <button onClick={() => setSent(false)} className="another-email">
               {changeLanguage
-                ? "write another email"
+                ? "Write Another Email"
                 : "ახალი იმეილის გაგზავნა"}
             </button>
           </div>
@@ -100,7 +100,7 @@ export const Contact = () => {
           <div className="emailer-container">
             <p>
               {changeLanguage
-                ? "also, you can send me an email:"
+                ? "Also, You can send me an Email:"
                 : "ასევე შეგიძლია იმეილი გამომიგზავნო :"}
             </p>
             <form onSubmit={sendEmail} className="emailer-style">
@@ -115,7 +115,7 @@ export const Contact = () => {
               <input
                 className={nameError ? "error-input" : null}
                 placeholder={
-                  changeLanguage ? "Enter Your Name" : "შეიყვანე სახელი"
+                  changeLanguage ? "Enter Your name" : "შეიყვანე სახელი"
                 }
                 type="text"
                 name="name"
@@ -124,7 +124,7 @@ export const Contact = () => {
               {emailError ? (
                 <p className="error-text">
                   {changeLanguage
-                    ? "valid email is required"
+                    ? "Valid Email is required"
                     : "აუცილებელია შეიყვანო სწორი იმეილი"}
                 </p>
               ) : null}
@@ -139,14 +139,14 @@ export const Contact = () => {
               {msgError ? (
                 <p className="error-text">
                   {changeLanguage
-                    ? "enter minimum 15 characters"
+                    ? "Enter minimum 15 characters"
                     : "შეიყვანეთ მინიმუმ 15 სიმბოლო"}
                 </p>
               ) : null}
               <textarea
                 placeholder={
                   changeLanguage
-                    ? "Enter Your Message text (min. 15 characters)"
+                    ? "Enter Your message text (Min. 15 characters)"
                     : "შეიყვანე შეტყობინების ტექსტი (მინიმუმ 15 სიმბოლო)"
                 }
                 className={msgError ? "error-input" : null}

@@ -4,7 +4,7 @@ import "../css/sidePanel.css";
 import { ChangeLanguage, ThemeChanger } from "./atoms";
 
 export const SidePanel = () => {
-  const [sidePanelToggled, setSidePanelToggled] = useState(false);
+  const [sidePanelToggled, setSidePanelToggled] = useState(true);
 
   const toggleSidePanel = () => {
     setSidePanelToggled((prev) => !prev);

@@ -59,7 +59,7 @@ export const Projects = () => {
         })}
       </div>
       <p onClick={() => toAllProjects()} className="all-projects">
-        {changeLanguage ? " all projects" : " სრული სია"}{" "}
+        {changeLanguage ? " All Projects" : " სრული სია"}{" "}
         <i className="fas fa-angle-double-right"></i>
       </p>
     </div>

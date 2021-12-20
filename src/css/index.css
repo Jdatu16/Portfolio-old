@@ -23,7 +23,6 @@
 body {
   box-sizing: border-box;
   font-family: Marriweather, sans-serif;
-  text-transform: capitalize;
   background-image: var(--body-dark-ulr);
   background-size: cover;
   background-color: var(--clr-body);

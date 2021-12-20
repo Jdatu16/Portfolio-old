@@ -19,7 +19,7 @@ export const Info = () => {
             />
           </div>
           <fieldset className="self-description-div">
-            <legend>info</legend>
+            <legend>Info</legend>
             <div className="fieldset-info">
               {changeLanguage ? "Name" : "სახელი"}:{" "}
               <strong>{changeLanguage ? "Juba" : "ჯუბა"}</strong>
@@ -40,13 +40,13 @@ export const Info = () => {
             </div>
             <div className="fieldset-info">
               <p>
-                {changeLanguage ? "country" : "ქვეყანა"}:{" "}
+                {changeLanguage ? "Country" : "ქვეყანა"}:{" "}
                 <strong>{changeLanguage ? "Georgia" : "საქართველო"}</strong>
               </p>
             </div>
             <div className="fieldset-info">
               <p>
-                {changeLanguage ? "city" : "ქალაქი"}:{" "}
+                {changeLanguage ? "City" : "ქალაქი"}:{" "}
                 <strong>{changeLanguage ? "Tbilisi" : "თბილისი"}</strong>
               </p>
             </div>
@@ -55,7 +55,7 @@ export const Info = () => {
         <div className="appear info-bio-div">
           <p>
             {changeLanguage
-              ? "I'm a hard worker, ambitious, and a fast learner. I want to learn as much as possible to enhance my skills as an individual and also as a team worker. I always welcome new challenges and opportunities, that help me to overcome my limits. Have been studying front-end since December of 2020 and will keep it that way."
+              ? "I'm a hardworking and ambitious developer who wants to learn as much as possible to enhance his skills as an individual and also as a team worker. I always welcome new challenges and opportunities, that help me overcome my limits. Have been studying front-end since December of 2020 and will keep it that way."
               : "2020 წლის დეკემბრიდან ვსწავლობ front-end-ს. ვარ შრომისმოყვარე და ამბიციური. ჩემი მიზანია განვვითარდე მაქსიმალურად მოკლე დროში და ვიყო უფრო პროდუქტიული როგორც ინდივიდი, ასევე - გუნდის წევრი. ყოველთვის მივესალმები ისეთ გამოწვევებს, რომლებიც მეხმარება დავძლიო არსებული ლიმიტი."}
           </p>
           <div>
